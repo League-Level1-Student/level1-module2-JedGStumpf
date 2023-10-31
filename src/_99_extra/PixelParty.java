@@ -23,6 +23,7 @@ import javax.swing.JPanel;
 public class PixelParty {
 	public static int BLACK = getColor(255, 0, 0, 0);
 	public int currentColor = BLACK;
+	public Random rand = new Random();
 	
 	private BufferedImage img;
 	private static int width = 512;
@@ -36,6 +37,8 @@ public class PixelParty {
 	private JLabel label = new JLabel();
 	
 	private boolean isRainbow = false;
+	
+	
 	
 	public PixelParty() {
 		img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
